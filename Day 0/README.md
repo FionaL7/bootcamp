@@ -1,13 +1,47 @@
+# Day 0 - Tasks
 
-# Day 0 – Linux Cloud Server Setup
+## Server Setup (ex-tools-1)
 
-## 🌐 Live Webpage Link
-http://34.136.54.235/
+A web server with just one page displaying my name and photo.
 
-## ✅ What I Did
+Used **Google Cloud VM** and **Nginx** to run the server.
 
-- Set up a Linux VM using Google Cloud Platform.
-- Installed `nginx` to serve web content.
-- Created a simple HTML page with my name and photo.
-- Served it using nginx at `/var/www/html`.
+**Link:** http://your-subdomain.afraid.org  
+*(Replace this with your actual live domain link)*
+
+---
+
+## 🛠️ Tools Used
+
+- **Google Cloud Platform (Compute Engine)**
+- **Nginx Web Server**
+- **afraid.org (FreeDNS)**
+- **ChatGPT and Google** 
+
+---
+
+## 🧭 Steps Followed
+
+1. Set up a **Virtual Machine (Debian OS)** on Google Cloud using Compute Engine.
+2. Installed Nginx:
+   ```bash
+   sudo apt update
+   sudo apt install nginx
+   ```
+3. Created index.html containing my name and photo.
+4. Uploaded the HTML and image to:
+
+```bash
+/var/www/html/
+```
+5. Set up a free subdomain using afraid.org, pointing it to my external IP address.
+
+## 🌐 Website Live At
+IP Address: http://34.136.54.235	
+Domain: http://your-subdomain.afraid.org
+
+## 🤖 ChatGPT Help
+Used ChatGPT to resolve:
+Nginx setup
+SSH terminal navigation
 
