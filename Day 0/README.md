@@ -7,9 +7,9 @@ A web server with just one page displaying my name and photo.
 Used **Google Cloud VM** and **Nginx** to run the server.
 
 **Link:** http://your-subdomain.afraid.org  
-*(Replace this with your actual live domain link)*
 
----
+
+
 
 ## 🛠️ Tools Used
 
@@ -37,11 +37,11 @@ Used **Google Cloud VM** and **Nginx** to run the server.
 5. Set up a free subdomain using afraid.org, pointing it to my external IP address.
 
 ## 🌐 Website Live At
-IP Address: http://34.136.54.235 \	
-Domain: http://your-subdomain.afraid.org
+- IP Address: http://34.136.54.235 
+- Domain: http://your-subdomain.afraid.org
 
 ## 🤖 ChatGPT Help
-Used ChatGPT to resolve: \
-Nginx setup\
-SSH terminal navigation
+Used ChatGPT to resolve: 
+- Nginx setup
+- SSH terminal navigation
 
