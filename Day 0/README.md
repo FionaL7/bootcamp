@@ -6,7 +6,7 @@ A web server with just one page displaying my name and photo.
 
 Used **Google Cloud VM** and **Nginx** to run the server.
 
-**Link:** [http://your-subdomain.afraid.org](http://mybootcamp.strangled.net/)  
+**Link:** [http://mybootcamp.strangled.net/](http://mybootcamp.strangled.net/)  
 
 
 
@@ -38,7 +38,7 @@ Used **Google Cloud VM** and **Nginx** to run the server.
 
 ## 🌐 Website Live At
 - IP Address: http://34.136.54.235 
-- Domain: h[ttp://your-subdomain.afraid.org](http://mybootcamp.strangled.net/)
+- Domain: [http://mybootcamp.strangled.net/](http://mybootcamp.strangled.net/) 
 
 ## 🤖 ChatGPT Help
 Used ChatGPT to resolve: 
