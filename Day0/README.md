@@ -45,3 +45,30 @@ Used ChatGPT to resolve:
 - Nginx setup
 - SSH terminal navigation
 
+# ex-basics
+
+# fiona-hello
+A simple Python CLI package that greets users using `typer` and prints styled output using `rich`.
+
+## 📦 Install
+
+```bash
+pip install fiona-hello
+```
+
+## 🚀 Usage
+
+```bash
+
+say-hello --name Fiona
+```
+
+## 💡 Features
+
+- CLI built with typer
+- Beautiful output using rich
+- Easy to install and run
+
+## 🔗 PyPI Link
+
+**Link:** [fiona-hello on PyPI](https://test.pypi.org/project/fiona-hello/0.1.2/)
