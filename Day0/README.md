@@ -45,9 +45,9 @@ Used ChatGPT to resolve:
 - Nginx setup
 - SSH terminal navigation
 
-#ex-basics
-# fiona-hello
+# ex-basics
 
+# fiona-hello
 A simple Python CLI package that greets users using `typer` and prints styled output using `rich`.
 
 ## 📦 Install
