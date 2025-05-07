@@ -1,0 +1,25 @@
+
+# pyproject.toml for Minimal Python Project
+
+[project]
+name = "mypkg"
+version = "0.1.0"
+description = "A minimal example package"
+authors = ["Your Name <your.email@example.com>"]
+dependencies = ["requests"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+mytool = "mypkg.cli:main"  # Expose CLI command 'mytool'
+
+# Example of extra files inclusion
+[tool.setuptools.package_data]
+"mypkg" = ["data/*.txt"]
+
+# Example versioning strategy
+# You can either use:
+# version = "0.1.0" or
+# version = "0.1.0-alpha" for alpha version or use dynamic versioning via Git tags
