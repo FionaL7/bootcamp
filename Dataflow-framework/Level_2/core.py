@@ -8,11 +8,3 @@ def to_upper(line: str) -> str:
 
 def to_snakecase(line: str) -> str:
     return line.strip().replace(" ", "_")
-
-
-def to_lower(line: str) -> str:
-    return line.lower()
-
-
-def to_titlecase(line: str) -> str:
-    return line.title()

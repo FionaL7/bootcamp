@@ -19,12 +19,8 @@ def transform(line: str, mode: str) -> str:
     line = line.strip()
     if mode == "uppercase":
         return line.upper()
-    elif mode == "lowercase":
-        return line.lower()
     elif mode == "snakecase":
         return line.lower().replace(" ", "_")
-    elif mode == "titlecase":
-        return line.title()
 
 
 def write_output(lines: Iterator[str], output_path: Optional[str]) -> None:
@@ -43,7 +39,7 @@ def process(
     output: Optional[str] = typer.Option(
         None, "--output", help="Optional output file path"),
     mode: str = typer.Option(
-        DEFAULT_MODE, "--mode", help="Processing mode: uppercase, lowercase, snakecase, titlecase")
+        DEFAULT_MODE, "--mode", help="Processing mode: uppercase, snakecase")
 ):
     try:
         input_lines = read_lines(input)
