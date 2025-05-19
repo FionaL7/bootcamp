@@ -1,0 +1,15 @@
+database:
+  path: "sqlite.db"
+
+auth:
+  api_key: "supersecret123"
+
+ingestion:
+  watch_folder: "watch/unprocessed"
+  processed_folder: "watch/processed"
+  log_file: "logs/ingestion.log"
+  batch_size: 10
+
+api:
+  host: "0.0.0.0"
+  port: 8000
