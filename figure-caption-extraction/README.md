@@ -47,6 +47,7 @@ docker run -p 8000:8000 -e API_KEY=yourapikey paper-extractor
 ```http
 X-API-Key: yourapikey
 ```
+try "supersecret123"
 
 ## Test PMC IDs
 
