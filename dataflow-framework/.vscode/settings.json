@@ -1,0 +1,12 @@
+{
+    "python.analysis.extraPaths": [
+        "./Level-4",
+        "./abstraction-level-6",
+        "./new",
+        "./new",
+        "./abstraction-level-8",
+        "./abstraction-level-8",
+        "./file-processing-system",
+        "./file-processing-system"
+    ]
+}

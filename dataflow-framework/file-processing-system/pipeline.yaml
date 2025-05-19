@@ -1,0 +1,5 @@
+processors:
+  start: processors.snake.SnakeCaseProcessor
+  snake_case: processors.upper.ToUpperProcessor
+  to_upper: processors.counter.CounterProcessor
+  counter: end

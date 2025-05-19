@@ -1,0 +1,4 @@
+pipeline:
+  - type: processors.upper.ToUpper
+  - type: processors.counter.LineCounter
+  - type: processors.snake.ToSnakecase
