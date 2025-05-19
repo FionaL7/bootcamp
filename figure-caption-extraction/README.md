@@ -121,7 +121,9 @@ SOURCE_HANDLERS = {
     # "arxiv": fetch_from_arxiv, etc.
 }
 ```
-
+## Live demo 
+You can test the API live at :
+[Open FASTApi Docs](http://34.59.246.80:8000/docs)
 ## 🙋‍♀️ Author
 
 - Created by Fiona Lazarus
