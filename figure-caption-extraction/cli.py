@@ -41,27 +41,51 @@ def main():
         sys.exit(1)
 
     data = response.json()
-
+    articles_list = data.get("results", [])
     if args.output_format == "json":
         with open(args.save_to, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
     elif args.output_format == "csv":
-
         with open(args.save_to, "w", newline='', encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow(["PMC ID", "Title", "Abstract", "Figure Caption",
-                            "Figure URL", "Entity Text", "Entity Type"])
-            for article in data:
-                for fig in article["figures"]:
-                    for entity in fig.get("entities", []):
+
+                             "Figure URL", "Entity Text", "Entity Type", "Error Message"])
+            for article in articles_list:
+
+                pmcid = article.get("pmcid", "")
+                if "error" in article:
+                    writer.writerow([
+
+                        pmcid, "", "", "", "", "", "", article["error"]
+                    ])
+                    continue
+                title = article.get("title", "")
+                abstract = article.get("abstract", "")
+                figures = article.get("figures", [])
+                if not figures:
+                    writer.writerow([
+                        pmcid, title, abstract, "", "", "", "", ""
+                    ])
+                    continue
+
+                for fig in figures:
+                    caption = fig.get("caption", "")
+                    fig_url = fig.get("url", "")
+
+                    entities = fig.get("entities", [])
+
+                    if not entities:
                         writer.writerow([
-                            article.get("id"),
-                            article.get("title"),
-                            article.get("abstract"),
-                            fig.get("caption"),
-                            fig.get("url"),
-                            entity.get("text"),
-                            entity.get("type")
+                            pmcid, title, abstract, caption, fig_url, "", "", ""
+                        ])
+                        continue
+
+                    for entity in entities:
+                        writer.writerow([
+                            pmcid, title, abstract, caption, fig_url,
+                            entity.get("text", ""), entity.get(
+                                "type", ""), ""
                         ])
 
     print(
